@@ -29,7 +29,7 @@ function ForgotPassword() {
             return setData({...data, err: 'Invalid email', success: ''})
             
         try {
-            const res = await axios.post('/user/forgotPassword', {email})
+            const res = await axios.post('https://authentication-flow.herokuapp.com/user/forgotPassword', {email})
 
             return setData({...data, err: '', success: res.data.msg})
         } catch (error) {

@@ -42,7 +42,7 @@ function ResetPassword() {
             return setData({ ...data, err: "Password did not match", success: '' })
 
         try {
-            const res = await axios.post('/user/resetPassword', {password}, {              
+            const res = await axios.post('https://authentication-flow.herokuapp.com/user/resetPassword', {password}, {              
                 headers: { Authorization: token }
             })
             setTimeout(() => {

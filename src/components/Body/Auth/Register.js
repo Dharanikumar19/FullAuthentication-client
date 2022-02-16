@@ -58,7 +58,7 @@ function Register() {
             return setUser({ ...user, err: "Password and confirm password did not match", success: '' })
 
         try {
-            const res = await axios.post('/user/register', {
+            const res = await axios.post('https://authentication-flow.herokuapp.com/user/register', {
                 name, email, password
             })
             setUser({...user, err: '', success: res.data.msg})
