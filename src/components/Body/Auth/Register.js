@@ -97,7 +97,7 @@ function Register() {
                 </div>
                 <div>
                     <label htmlFor='confirm_password'>Confirm Password</label>
-                    <input type="password" placeholder='Enter your confirm password' id='password' 
+                    <input type="password" placeholder='Enter your confirm password' id='confirm_password' 
                         value={confirm_password} name="confirm_password" onChange={handleChangeInput} />
                 </div>
                 <div className='row'>
